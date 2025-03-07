@@ -33,6 +33,14 @@ public class Playlist {
         desertIslandPlaylista.remove("Afinaito - Maicol El Trequeto");
         desertIslandPlaylista.remove("Anuel - Kei");
 
+        int  songA = desertIslandPlaylista.indexOf("Michel - Mujer De Cabaret");
+        int  songB = desertIslandPlaylista.indexOf("Uriel Henao - Como nos cambia la vida ");
+
+        String tempA = desertIslandPlaylista.get(songA);
+        desertIslandPlaylista.set(songA, desertIslandPlaylista.get(songB));
+        desertIslandPlaylista.set(songB, tempA);
+
+
 
 
     }
